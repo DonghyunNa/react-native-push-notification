@@ -354,7 +354,7 @@ public class RNPushNotificationHelper {
             String smallIcon = bundle.getString("smallIcon");
 
             if (smallIcon != null && !smallIcon.isEmpty()) {
-              smallIconResId = res.getIdentifier(smallIcon, "mipmap", packageName);
+              smallIconResId = res.getIdentifier(smallIcon, "drawable", packageName);
             } else if(smallIcon == null) {
               smallIconResId = res.getIdentifier("ic_notification", "mipmap", packageName);
             }
